@@ -1,4 +1,3 @@
-//% color="#AA278D" weight=200
 namespace macarena {
 
     //% block
@@ -28,5 +27,4 @@ namespace macarena {
         music.playMelody("G:3 - G:1 - G:1 -", 100)
     }
 }
-
 macarena.standUp()
