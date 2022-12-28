@@ -13,6 +13,7 @@ namespace macarena {
           `, 500)
     }
 
+
     //% block
     //% block.loc.nl="linker arm vooruit"
     //% weight=990
@@ -26,7 +27,6 @@ namespace macarena {
           `, 0)
         music.playMelody("G:3 - G:1 - G:1 -", 100)
     }
-
     //% block
     //% block.loc.nl="rechter arm vooruit"
     //% weight=980
@@ -41,10 +41,11 @@ namespace macarena {
         music.playMelody("G:3 - G:1 - G:1 -", 100)
     }
 
+
     //% block
-    //% block.loc.nl="linker hand draaien"
+    //% block.loc.nl="linker hand omhoog draaien"
     //% weight=970
-    export function turnLeftHand() {
+    export function turnLeftHandUp() {
         basic.showLeds(`
           # # . # .
           . # # # .
@@ -54,13 +55,12 @@ namespace macarena {
           `, 0)
         music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
     }
-
     //% block
-    //% block.loc.nl="rechter hand draaien"
+    //% block.loc.nl="rechter hand omhoog draaien"
     //% weight=960
-    export function turnRightHand() {
+    export function turnRightHandUp() {
         basic.showLeds(`
-          # # . # .
+          # # . # #
           . # # # .
           . # # # .
           . . # . .
@@ -70,17 +70,111 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl="linker hand naar rechter heup"
+    //% block.loc.nl="linker hand naar rechter schouder"
     //% weight=950
-    export function leftHandToRightHip() {
+    export function leftHandToRightShoulder() {
         basic.showLeds(`
-          . . . # .
-          . . # # .
-          # # # # .
-          . # # . .
+          . . . # #
+          . # # # .
+          . # # # .
+          . . # . .
           . # . # .
           `, 0)
         music.playMelody("G:3 - G:1 - G:1 -", 100)
     }
+    //% block
+    //% block.loc.nl="rechter hand naar linker shouder"
+    //% weight=940
+    export function rightHandToLeftShoulder() {
+        basic.showLeds(`
+          . . . . .
+          . # # # .
+          . # # # .
+          . . # . .
+          . # . # .
+          `, 0)
+        music.playMelody("G:3 - G:1 - G:1 -", 100)
+    }
+
+    //% block
+    //% block.loc.nl="linker hand naar hoofd"
+    //% weight=930
+    export function leftHandToHead() {
+        basic.showLeds(`
+          . . . . .
+          . # # # .
+          # # # # .
+          . . # . .
+          . # . # .
+          `, 0)
+        music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
+    }
+    //% block
+    //% block.loc.nl="rechter hand naar hoofd"
+    //% weight=920
+    export function rightHandToHead() {
+        basic.showLeds(`
+          . . . . .
+          . # # # .
+          # # # # #
+          . . # . .
+          . # . # .
+          `, 0)
+        music.playMelody("E:1 - D:1 - - - - -", 100)
+    }
+
+    //% block
+    //% block.loc.nl="linker hand naar rechter heup"
+    //% weight=910
+    export function leftHandToRightHip() {
+        basic.showLeds(`
+          . . . . .
+          . . # # .
+          . # # # #
+          . . # # .
+          . # . # .
+          `, 0)
+        music.playMelody("G:3 - G:1 - G:1 -", 100)
+    }
+    //% block
+    //% block.loc.nl="rechter hand naar linker heup"
+    //% weight=900
+    export function rightHandToLeftHip() {
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          . # # # .
+          . # # # .
+          . # . # .
+          `, 0)
+        music.playMelody("G:3 - G:1 - G:1 -", 100)
+    }
+
+    //% block
+    //% block.loc.nl="linker hand in zij"
+    //% weight=890
+    export function leftHandToSide() {
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          # # # # .
+          . # # . .
+          . # . # .
+          `, 0)
+        music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
+    }
+    //% block
+    //% block.loc.nl="rechter hand naar zij"
+    //% weight=880
+    export function rightHandToSide() {
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          # # # # #
+          . # # # .
+          . # . # .
+          `, 0)
+        music.playMelody("G:1 - B:1 - - - - -", 100)
+    }
 }
-macarena.standUp()
+
