@@ -1,5 +1,18 @@
 namespace macarena {
 
+    //% block="temporary"
+    //% block.loc.nl="tijdelijk"
+    //% weight=999
+    export function something() {
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          . # # # .
+          . . # . .
+          . # . # .
+          `, 500)
+    }
+
     let tempo: number;
 
     //% block="stand up"
