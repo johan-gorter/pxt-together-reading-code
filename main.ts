@@ -1,8 +1,9 @@
 namespace macarena {
 
-    //% block="temporary"
-    //% block.loc.nl="tijdelijk"
-    //% weight=999
+    //% block="temporary2"
+    //% block.loc.nl="tijdelijk2"
+    //% block.loc.nl-NL="tijdelijk3"
+    //% weight=989
     export function something() {
         basic.showLeds(`
           . . . . .
@@ -17,6 +18,7 @@ namespace macarena {
 
     //% block="stand up"
     //% block.loc.nl="sta op"
+    //% block.loc.nl-nl="tijdelijk3"
     //% weight=1000
     export function standUp() {
         basic.showLeds(`
