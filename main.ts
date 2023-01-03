@@ -2,7 +2,7 @@ namespace macarena {
 
     let tempo: number;
 
-    //% block
+    //% block="stand up"
     //% block.loc.nl="sta op"
     //% weight=1000
     export function standUp() {
@@ -180,7 +180,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl="schud heupen"
+    //% block.loc.nl="heupen schudden"
     //% weight=870
     export function shakeHips() {
         basic.showLeds(`
@@ -190,7 +190,7 @@ namespace macarena {
           . . # # .
           . # . # .
           `, 0)
-        music.playMelody("D5:7 - ", tempo)
+        music.playMelody("D5:9 -", tempo)
         basic.showLeds(`
           . . . . .
           . . # . .
@@ -198,7 +198,7 @@ namespace macarena {
           . # # . .
           . # . # .
           `, 0)
-        music.playMelody("C5:3 - D5:3 -", tempo)
+        music.playMelody("C5:3 - D5:1 -", tempo)
         basic.showLeds(`
           . . . . .
           . . # . .
