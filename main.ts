@@ -1,5 +1,7 @@
 namespace macarena {
 
+    let tempo: number;
+
     //% block
     //% block.loc.nl="sta op"
     //% weight=1000
@@ -25,7 +27,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
     //% block.loc.nl="rechter arm vooruit"
@@ -38,7 +40,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
 
 
@@ -53,7 +55,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
+        music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
     //% block.loc.nl="rechter hand omhoog draaien"
@@ -66,7 +68,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:1 - B:1 - D:1 - D:1 -", 100)
+        music.playMelody("G:1 - B:1 - D:1 - D:1 -", tempo)
     }
 
     //% block
@@ -80,7 +82,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
     //% block.loc.nl="rechter hand naar linker shouder"
@@ -93,7 +95,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
 
     //% block
@@ -107,7 +109,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
+        music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
     //% block.loc.nl="rechter hand naar hoofd"
@@ -120,7 +122,7 @@ namespace macarena {
           . . # . .
           . # . # .
           `, 0)
-        music.playMelody("E:1 - D:1 - - - - -", 100)
+        music.playMelody("E:1 - D:1 - - - - -", tempo)
     }
 
     //% block
@@ -134,7 +136,7 @@ namespace macarena {
           . . # # .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
     //% block.loc.nl="rechter hand naar linker heup"
@@ -147,7 +149,7 @@ namespace macarena {
           . # # # .
           . # . # .
           `, 0)
-        music.playMelody("G:3 - G:1 - G:1 -", 100)
+        music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
 
     //% block
@@ -161,10 +163,10 @@ namespace macarena {
           . # # . .
           . # . # .
           `, 0)
-        music.playMelody("G:1 - G:1 - G:1 - G:1 -", 100)
+        music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl="rechter hand naar zij"
+    //% block.loc.nl="rechter hand in zij"
     //% weight=880
     export function rightHandToSide() {
         basic.showLeds(`
@@ -174,7 +176,57 @@ namespace macarena {
           . # # # .
           . # . # .
           `, 0)
-        music.playMelody("G:1 - B:1 - - - - -", 100)
+        music.playMelody("G:1 - B:1 - - - - -", tempo)
+    }
+
+    //% block
+    //% block.loc.nl="schud heupen"
+    //% weight=870
+    export function shakeHips() {
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          # # # # #
+          . . # # .
+          . # . # .
+          `, 0)
+        music.playMelody("D5:7 - ", tempo)
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          # # # # #
+          . # # . .
+          . # . # .
+          `, 0)
+        music.playMelody("C5:3 - D5:3 -", tempo)
+        basic.showLeds(`
+          . . . . .
+          . . # . .
+          # # # # #
+          . # # # .
+          . # . # .
+          `, 0)
+        music.playMelody("B:1 - G:1 - - - - -", tempo)
+    }
+
+    //% block
+    //% block.loc.nl="sneller"
+    //% weight=500
+    export function speedUp() {
+        tempo = tempo * 3 / 2;
+    }
+
+    //% block
+    //% block.loc.nl="snelheid resetten"
+    //% weight=500
+    export function resetSpeed() {
+        tempo = 80;
+    }
+
+    //% block
+    //% block.loc.nl="applaus"
+    //% weight=400
+    export function applause() {
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Sawtooth, 380, 380, 121, 14, 1500, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
 }
-
