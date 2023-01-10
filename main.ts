@@ -3,7 +3,7 @@ namespace macarena {
     export let tempo: number = 80;
 
     //% block="stand up"
-    //% block.loc.nl-NL="sta op"
+    //% block.loc.nl="sta op"
     //% weight=1000
     export function standUp() {
         tempo = 80;
@@ -18,7 +18,7 @@ namespace macarena {
 
 
     //% block
-    //% block.loc.nl-NL="linker arm vooruit"
+    //% block.loc.nl="linker arm vooruit"
     //% weight=990
     export function leftArmForward() {
         basic.showLeds(`
@@ -31,7 +31,7 @@ namespace macarena {
         music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter arm vooruit"
+    //% block.loc.nl="rechter arm vooruit"
     //% weight=980
     export function rightArmForward() {
         basic.showLeds(`
@@ -46,7 +46,7 @@ namespace macarena {
 
 
     //% block
-    //% block.loc.nl-NL="linker hand omhoog draaien"
+    //% block.loc.nl="linker hand omhoog draaien"
     //% weight=970
     export function turnLeftHandUp() {
         basic.showLeds(`
@@ -59,7 +59,7 @@ namespace macarena {
         music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter hand omhoog draaien"
+    //% block.loc.nl="rechter hand omhoog draaien"
     //% weight=960
     export function turnRightHandUp() {
         basic.showLeds(`
@@ -73,7 +73,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="linker hand naar rechter schouder"
+    //% block.loc.nl="linker hand naar rechter schouder"
     //% weight=950
     export function leftHandToRightShoulder() {
         basic.showLeds(`
@@ -86,7 +86,7 @@ namespace macarena {
         music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter hand naar linker shouder"
+    //% block.loc.nl="rechter hand naar linker shouder"
     //% weight=940
     export function rightHandToLeftShoulder() {
         basic.showLeds(`
@@ -100,7 +100,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="linker hand naar hoofd"
+    //% block.loc.nl="linker hand naar hoofd"
     //% weight=930
     export function leftHandToHead() {
         basic.showLeds(`
@@ -113,7 +113,7 @@ namespace macarena {
         music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter hand naar hoofd"
+    //% block.loc.nl="rechter hand naar hoofd"
     //% weight=920
     export function rightHandToHead() {
         basic.showLeds(`
@@ -127,7 +127,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="linker hand naar rechter heup"
+    //% block.loc.nl="linker hand naar rechter heup"
     //% weight=910
     export function leftHandToRightHip() {
         basic.showLeds(`
@@ -140,7 +140,7 @@ namespace macarena {
         music.playMelody("G:3 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter hand naar linker heup"
+    //% block.loc.nl="rechter hand naar linker heup"
     //% weight=900
     export function rightHandToLeftHip() {
         basic.showLeds(`
@@ -154,7 +154,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="linker hand in zij"
+    //% block.loc.nl="linker hand in zij"
     //% weight=890
     export function leftHandToSide() {
         basic.showLeds(`
@@ -167,7 +167,7 @@ namespace macarena {
         music.playMelody("G:1 - G:1 - G:1 - G:1 -", tempo)
     }
     //% block
-    //% block.loc.nl-NL="rechter hand in zij"
+    //% block.loc.nl="rechter hand in zij"
     //% weight=880
     export function rightHandToSide() {
         basic.showLeds(`
@@ -181,7 +181,7 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="heupen schudden"
+    //% block.loc.nl="heupen schudden"
     //% weight=870
     export function shakeHips() {
         basic.showLeds(`
@@ -211,29 +211,29 @@ namespace macarena {
     }
 
     //% block
-    //% block.loc.nl-NL="sneller"
+    //% block.loc.nl="sneller"
     //% weight=500
     export function speedUp() {
         tempo = tempo * 3 / 2;
     }
 
     //% block
-    //% block.loc.nl-NL="snelheid resetten"
+    //% block.loc.nl="snelheid resetten"
     //% weight=500
     export function resetSpeed() {
         tempo = 80;
     }
 
     //% block
-    //% block.loc.nl-NL="applaus"
+    //% block.loc.nl="applaus"
     //% weight=400
     export function applause() {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Sawtooth, 380, 380, 121, 14, 1500, SoundExpressionEffect.Tremolo, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
 }
 
-//% color=190 weight=100 icon="\uf1ec" block="Scavenger hunt"
-//% block.loc.nl-NL="Speurtocht"
+//% block="Scavenger hunt"
+//% block.loc.nl="Speurtocht"
 namespace scavengerHunt {
     export let direction: number = 0;
 
@@ -242,7 +242,7 @@ namespace scavengerHunt {
     }
 
     //% block
-    //% block.loc.nl-NL="draai naar links"
+    //% block.loc.nl="draai naar links"
     export function turnLeft() {
         direction--;
         if (direction < 0) {
@@ -254,7 +254,7 @@ namespace scavengerHunt {
     }
 
     //% block
-    //% block.loc.nl-NL="draai naar rechts"
+    //% block.loc.nl="draai naar rechts"
     export function turnRight() {
         direction++;
         if (direction > 7) {
@@ -266,62 +266,81 @@ namespace scavengerHunt {
     }
 
     //% block
-    //% block.loc.nl-NL="draai om"
+    //% block.loc.nl="draai om"
     export function turnAround() {
         turnRight();
         turnRight();
     }
 
     //% block
-    //% block.loc.nl-NL="loop vooruit"
+    //% block.loc.nl="loop vooruit"
     export function walkForward() {
     }
 
     //% block
-    //% block.loc.nl-NL="loop $tileCount vooruit"
-    //% tileCount.loc.nl-NL="aantal tegels"
+    //% block.loc.nl="loop $tileCount vooruit"
+    //% tileCount.loc.nl="aantal tegels"
     export function walkTilesForward(tileCount: number) {
     }
 
     //% block
-    //% block.loc.nl-NL="loop $tileCount achteruit"
-    //% tileCount.loc.nl-NL="aantal tegels"
+    //% block.loc.nl="loop $tileCount achteruit"
+    //% tileCount.loc.nl="aantal tegels"
     export function walkTilesBackwards(tileCount: number) {
     }
 
     //% block
-    //% block.loc.nl-NL="was $description af"
-    //% description.loc.nl-NL="omschrijving"
+    //% block.loc.nl="was $description af"
+    //% description.loc.nl="omschrijving"
     export function wash(description: string) {
     }
 
     //% block
-    //% block.loc.nl-NL="droog $description af"
-    //% description.loc.nl-NL="omschrijving"
+    //% block.loc.nl="droog $description af"
+    //% description.loc.nl="omschrijving"
     export function dry(description: string) {
     }
 
     //% block
-    //% block.loc.nl-NL="maak een"
-    //% description.loc.nl-NL="omschrijving"
+    //% block.loc.nl="maak een"
+    //% description.loc.nl="omschrijving"
     export function makeA(description: string) {
     }
 
     //% block
-    //% block.loc.nl-NL="volg"
-    //% description.loc.nl-NL="omschrijving"
+    //% block.loc.nl="volg"
+    //% description.loc.nl="omschrijving"
     export function follow(description: string) {
     }
 
     //% block
-    //% block.loc.nl-NL="volg mij"
+    //% block.loc.nl="volg mij"
     export function followMe() {
     }
 
     //% block
-    //% block.loc.nl-NL="ik"
-    //% description.loc.nl-NL="omschrijving"
+    //% block.loc.nl="ik"
+    //% description.loc.nl="omschrijving"
     export function iAm(description: string): boolean {
         return false;
+    }
+
+    //% block
+    //% block.loc.nl="geef $description een high five"
+    //% description.loc.nl="omschrijving"
+    export function giveHighFiveTo(description: string) {
+    }
+
+
+    //% block
+    //% block.loc.nl="geef $description een boks"
+    //% description.loc.nl="omschrijving"
+    export function giveBoxTo(description: string) {
+    }
+
+    //% block
+    //% block.loc.nl="zwaai naar $description"
+    //% description.loc.nl="omschrijving"
+    export function waveTo(description: string) {
     }
 }
