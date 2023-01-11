@@ -278,13 +278,13 @@ namespace scavengerHunt {
     }
 
     //% block="walk $tileCount tiles forward"
-    //% block.loc.nl="loop $tileCount vooruit"
-    //% tileCount.loc.nl="aantalTegels"
+    //% block.loc.nl="loop $tileCount tegels vooruit"
+    //% tileCount.loc.nl=aantalTegels
     export function walkTilesForward(tileCount: number) {
     }
 
     //% block="walk $tileCount tiles achteruit"
-    //% block.loc.nl="loop $tileCount achteruit"
+    //% block.loc.nl="loop $tileCount tegels achteruit"
     export function walkTilesBackwards(tileCount: number) {
     }
 
