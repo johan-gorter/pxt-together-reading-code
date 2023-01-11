@@ -334,4 +334,9 @@ namespace scavengerHunt {
     //% block.loc.nl="zwaai naar $description"
     export function waveTo(description: string) {
     }
+
+    //% block="step" blockGap=8
+    //% block.loc.nl="stap"
+    export function step(cb: () => void) {
+    }
 }
