@@ -277,70 +277,61 @@ namespace scavengerHunt {
     export function walkForward() {
     }
 
-    //% block
+    //% block="walk $tileCount tiles forward"
     //% block.loc.nl="loop $tileCount vooruit"
     //% tileCount.loc.nl="aantalTegels"
     export function walkTilesForward(tileCount: number) {
     }
 
-    //% block
+    //% block="walk $tileCount tiles achteruit"
     //% block.loc.nl="loop $tileCount achteruit"
-    //% tileCount.loc.nl="aantalTegels"
     export function walkTilesBackwards(tileCount: number) {
     }
 
-    //% block
+    //% block="wash $description"
     //% block.loc.nl="was $description af"
-    //% description.loc.nl="omschrijving"
     export function wash(description: string) {
     }
 
-    //% block
+    //% block="dry $description"
     //% block.loc.nl="droog $description af"
-    //% description.loc.nl="omschrijving"
     export function dry(description: string) {
     }
 
-    //% block
+    //% block="make a $description"
     //% block.loc.nl="maak een $description"
-    //% description.loc.nl="omschrijving"
     export function makeA(description: string) {
     }
 
-    //% block
+    //% block="follow $description"
     //% block.loc.nl="volg $description"
-    //% description.loc.nl="omschrijving"
     export function follow(description: string) {
     }
 
-    //% block
+    //% block="follow me"
     //% block.loc.nl="volg mij"
     export function followMe() {
     }
 
-    //% block
+    //% block="I am $description"
     //% block.loc.nl="ik $description"
-    //% description.loc.nl="omschrijving"
     export function iAm(description: string): boolean {
         return false;
     }
 
-    //% block
+    //% block="give high five to $description"
     //% block.loc.nl="geef $description een high five"
-    //% description.loc.nl="omschrijving"
     export function giveHighFiveTo(description: string) {
     }
 
 
-    //% block
+    //% block="give box to $description"
     //% block.loc.nl="geef $description een boks"
-    //% description.loc.nl="omschrijving"
     export function giveBoxTo(description: string) {
     }
 
-    //% block
+    //% block="wave to $description"
     //% block.loc.nl="zwaai naar $description"
-    //% description.loc.nl="omschrijving"
     export function waveTo(description: string) {
     }
 }
