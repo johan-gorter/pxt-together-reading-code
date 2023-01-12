@@ -1,3 +1,4 @@
+//% block="Macarena" color="170"
 namespace macarena {
 
     export let tempo: number = 80;
@@ -232,7 +233,7 @@ namespace macarena {
     }
 }
 
-//% block="Scavenger hunt"
+//% block="Scavenger hunt" color="170"
 //% block.loc.nl="Speurtocht"
 namespace scavengerHunt {
     export let direction: number = 0;
@@ -334,8 +335,12 @@ namespace scavengerHunt {
     //% block.loc.nl="zwaai naar $description"
     export function waveTo(description: string) {
     }
+}
 
-    //% block="step" blockGap=8
+//% block="Scavenger hunt step" color="#AAAAAA"
+//% block.loc.nl="Speurtocht stap"
+namespace scavengerHuntStep {
+    //% block="step" blockGap=8 blockAllowMultiple=1
     //% block.loc.nl="stap"
     export function step(cb: () => void) {
     }
