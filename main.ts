@@ -337,6 +337,6 @@ namespace scavengerHunt {
 
     //% block="step" blockGap=8
     //% block.loc.nl="stap"
-    export function step(nr: number, cb: () => void) {
+    export function step(cb: () => void) {
     }
 }
