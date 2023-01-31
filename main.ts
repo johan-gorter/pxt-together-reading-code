@@ -244,7 +244,7 @@ namespace scavengerHunt {
 
     //% block
     //% block.loc.nl="draai naar links"
-    export function turnLeft() {
+    export function turnToLeft() {
         direction--;
         if (direction < 0) {
             direction = 7;
@@ -256,7 +256,7 @@ namespace scavengerHunt {
 
     //% block
     //% block.loc.nl="draai naar rechts"
-    export function turnRight() {
+    export function turnToRight() {
         direction++;
         if (direction > 7) {
             direction = 0;
@@ -334,6 +334,21 @@ namespace scavengerHunt {
     //% block="wave to $description"
     //% block.loc.nl="zwaai naar $description"
     export function waveTo(description: string) {
+    }
+
+    //% block="turn left"
+    //% block.loc.nl="sla linksaf"
+    export function turnLeft() {
+    }
+
+    //% block="turn right"
+    //% block.loc.nl="sla rechtsaf"
+    export function turnRight() {
+    }
+
+    //% block="straight ahead"
+    //% block.loc.nl="ga rechtdoor"
+    export function straightAhead() {
     }
 }
 
