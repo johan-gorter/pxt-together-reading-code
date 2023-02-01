@@ -278,6 +278,11 @@ namespace scavengerHunt {
     export function walkForward() {
     }
 
+    //% block
+    //% block.loc.nl="loop naar de volgende deur"
+    export function walkToNextDoor() {
+    }
+
     //% block="walk $tileCount tiles forward"
     //% block.loc.nl="loop $tileCount tegels vooruit"
     //% tileCount.loc.nl=aantalTegels
